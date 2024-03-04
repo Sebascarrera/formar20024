@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/src/img/background-formar2024.png'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta correcta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Esto establece la altura del cuerpo al 100% del viewport height (altura de la ventana del navegador) */
+    overflow: hidden; /* Esto evita que haya barras de desplazamiento */
+    font-family: Arial, sans-serif; /* Puedes ajustar la fuente según tus preferencias */
+}
+
+.contenedor {
+    display: initial !important; /* Anula el display: block predeterminado */
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* O ajusta la altura según tus necesidades */
+}
+
+.container_live {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container_live_wrapper {
+    position: relative;
+}
+
+.container_live_frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.container_live_frame > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/src/img/background-formar2024.png'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta correcta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100%; /* Esto establece la altura del cuerpo al 100% del viewport height (altura de la ventana del navegador) */
+    overflow: hidden; /* Esto evita que haya barras de desplazamiento */
+    font-family: Arial, sans-serif; /* Puedes ajustar la fuente según tus preferencias */
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* O ajusta la altura según tus necesidades */
+}
+
+.form-cont {
+    background-color: #fff; /* Agrega un fondo blanco o el color que desees */
+    padding: 20px; /* Ajusta el espacio interno según tus necesidades */
+    border-radius: 10px; /* Agrega esquinas redondeadas para un mejor aspecto */
+    max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+    width: 100%;
+}
+
+/* Estilos adicionales para los elementos dentro del formulario, como logo, inputs, etc. */
+
+
+.logo-Formar-2024 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.logo-Formar-2024 img {
+    width: 80%; /* Ajusta el ancho del logo al 100% del contenedor */
+    justify-content: center;
+}
+
+.input-container {
+    margin-bottom: 15px; /* Ajusta el margen inferior según tus necesidades */
+}
+
+P {
+    color: #00b1d4;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Color del fondo del botón */
+    border: 2px solid #00b1d4; /* Color del borde del botón */
+    color: #00b1d4; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.icono {
+    width: 30px; /* Ajusta el ancho del icono según tus necesidades */
+    margin-right: 10px; /* Agrega un margen derecho entre el icono y el input */
+}
+
+input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.boton-start {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff; /* Color del fondo del botón */
+    border: 2px solid #00b1d4; /* Color del borde del botón */
+    color: #00b1d4; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enlace:hover {
+    background-color: #00b1d4; /* Color del fondo del botón al pasar el mouse */
+    color: #fff;
+}
