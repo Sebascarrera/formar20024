@@ -10,7 +10,7 @@ body {
 }
 
 .contenedor {
-    display: initial !important; /* Anula el display: block predeterminado */
+    display: flex; /* Anula el display: block predeterminado */
     align-items: center;
     justify-content: center;
     height: 100vh; /* O ajusta la altura según tus necesidades */
