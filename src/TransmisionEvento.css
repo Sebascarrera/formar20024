@@ -15,31 +15,3 @@ body {
     justify-content: center;
     height: 100vh; /* O ajusta la altura según tus necesidades */
 }
-
-.container_live {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.container_live_wrapper {
-    position: relative;
-}
-
-.container_live_frame {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-bottom: 56.25%;
-}
-
-.container_live_frame > iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}

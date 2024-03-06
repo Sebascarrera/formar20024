@@ -1,11 +1,18 @@
 import React from 'react';
 import './style.css'; // Asumiendo que tienes un archivo de estilo llamado Formulario.css
+import Logo from './img/formar2024-logo.png'
 
-const Formulario = () => {
+const Formulario = ({ onEnter }) => {
+
+  const onPressEnter = (e) => {
+    e.preventDefault()
+    onEnter()
+  }
+  
   return (
     <div className="contenedor">
       <form className="form-cont">
-        <div className="logo-Formar-2024"><img src="/src/img/formar2024-logo.png" alt="Logo Formar 2024" /></div>
+        <div className="logo-Formar-2024"><img src={Logo} alt="Logo Formar 2024" /></div>
         <div className="registro">
           <div className="input-container">
             <p>Nombre</p>
@@ -21,7 +28,7 @@ const Formulario = () => {
           </div>
         </div>
         <section className="boton-start">
-          <a href="TransmisionEvento.js" className="boton-enlace">Ingresar al Evento</a>
+          <div onClick={ onPressEnter } className="boton-enlace">Ingresar al Evento</div>
         </section>
       </form>
     </div>
