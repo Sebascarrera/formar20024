@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css'; // Asumiendo que tienes un archivo de estilo llamado Formulario.css
 import Logo from './img/formar2024-logo.png'
-import Logocolmena from './img/formar2024-logo.png'
+import Logocolmena from './img/logo-colmena-seguros@4x.png'
 
 const Formulario = ({ onEnter }) => {
 
@@ -31,7 +31,11 @@ const Formulario = ({ onEnter }) => {
         <section className="boton-start">
           <div onClick={ onPressEnter } className="boton-enlace">Ingresar al Evento</div>
         </section>
+        
       </form>
+      <div className="logo-container">
+        <img src={Logocolmena} alt="logo colmena" />
+      </div>
     </div>
     
   );
