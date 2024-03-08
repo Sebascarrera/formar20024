@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css'; // Asumiendo que tienes un archivo de estilo llamado Formulario.css
 import Logo from './img/formar2024-logo.png'
-import Logocolmena from './img/logo-colmena-seguros@4x.png'
+import Logocolmena from './img/logo-colmena-seguros.png'
 
 const Formulario = ({ onEnter }) => {
 
