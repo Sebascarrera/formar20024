@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css'; // Asumiendo que tienes un archivo de estilo llamado Formulario.css
 import Logo from './img/formar2024-logo.png'
+import Logocolmena from './img/formar2024-logo.png'
 
 const Formulario = ({ onEnter }) => {
 
@@ -32,6 +33,7 @@ const Formulario = ({ onEnter }) => {
         </section>
       </form>
     </div>
+    
   );
 }
 

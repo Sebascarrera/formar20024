@@ -43,7 +43,7 @@ body {
 }
 
 P {
-    color: #00b1d4;
+    color: #008da5;
     margin-top: 30px;
     margin-bottom: 0;
 }
@@ -52,8 +52,8 @@ P {
     display: flex;
     align-items: center;
     background-color: #fff; /* Color del fondo del botón */
-    border: 2px solid #00b1d4; /* Color del borde del botón */
-    color: #00b1d4; /* Color del texto del botón */
+    border: 2px solid #008da5; /* Color del borde del botón */
+    color: #008da5; /* Color del texto del botón */
     text-decoration: none;
     border-radius: 50px;
     overflow: hidden;
@@ -81,14 +81,65 @@ input {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fff; /* Color del fondo del botón */
-    border: 2px solid #00b1d4; /* Color del borde del botón */
-    color: #00b1d4; /* Color del texto del botón */
+    border: 2px solid #008da5; /* Color del borde del botón */
+    color: #008da5; /* Color del texto del botón */
     text-decoration: none;
     border-radius: 50px;
     transition: background-color 0.3s ease;
 }
 
 .boton-enlace:hover {
-    background-color: #00b1d4; /* Color del fondo del botón al pasar el mouse */
+    background-color: #008da5; /* Color del fondo del botón al pasar el mouse */
     color: #fff;
 }
+
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas más pequeñas */
+
+    body {
+        background-image: url('/src/img/background-formar2024-max-width600.jpg') !important; /* Cambia la imagen de fondo para pantallas más pequeñas */
+        background-size: 100% !important;
+        height: 80% !important;
+    }
+
+    .form-cont {
+        background-color: rgba(255, 255, 255, 0.0) !important; 
+        padding: 20px; 
+        border-radius: 10px; 
+        max-width: 300px; 
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .logo-Formar-2024 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px !important;
+    }
+
+    .input-container {
+        margin-bottom: 5px !important; 
+    }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+   
+    body {
+        background-image: url('/src/img/background-formar2024-max-width1024.jpg') !important; /* Cambia la imagen de fondo para pantallas más pequeñas */
+        background-size: 100% !important;
+    }
+
+    .form-cont {
+        background-color: rgba(255, 255, 255, 0.0) !important; 
+        padding: 20px; 
+        border-radius: 10px; 
+        max-width: 350px; 
+        width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 1025px) {
+    /* Estilos para pantallas grandes */
+  }
+  
