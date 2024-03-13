@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       { showingTransmision ? (
-        <TransmisionEvento />
+        <TransmisionEvento enabled={false} />
       ): (
         <Formulario onEnter={ () => {
             // TODO: validar que la cedula exista, y si existe

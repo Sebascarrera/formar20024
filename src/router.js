@@ -7,6 +7,10 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <App />
+    },
+    {
+        path: "/prueba-chat",
+        element: <TransmisionEvento enabled />
     }
 ]);
 
