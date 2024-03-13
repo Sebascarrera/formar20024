@@ -27,6 +27,12 @@ const Formulario = ({ onEnter }) => {
               <input type="number" name="cedula" id="cedula" placeholder="" required />
             </div>
           </div>
+          <div className="input-container">
+            <p>Empresa</p>
+            <div className="controls">
+              <input type="text" name="empresa" id="empresa" placeholder="" required />
+            </div>
+          </div>
         </div>
         <section className="boton-start">
           <div onClick={ onPressEnter } className="boton-enlace">Ingresar al Evento</div>
