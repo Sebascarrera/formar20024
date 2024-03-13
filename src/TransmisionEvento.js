@@ -3,6 +3,9 @@ import './TransmisionEvento.css'; // Asumiendo que tienes un archivo de estilo l
 import Logocolmena from './img/logo-colmena-seguros.png'
 
 const TransmisionEvento = ({ enabled = false }) => {
+
+  const videoId = "lczTdbe_HAQ";
+
   return (
     <div className="contenedor">
 
@@ -11,14 +14,14 @@ const TransmisionEvento = ({ enabled = false }) => {
           <iframe
             title="video"
             style={{ width: '60%', height: '60%'}}
-            src="https://www.youtube.com/embed/f73jfWHhvyM"
+            src={`https://www.youtube.com/embed/${videoId}`}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           />
           <iframe 
             title="chat"
-            src="https://www.youtube.com/live_chat?v=f73jfWHhvyM&embed_domain=formar2024.com" 
+            src={`https://www.youtube.com/live_chat?v=${videoId}&embed_domain=www.formar2024.com`}
             width="560" 
             height="315" 
             frameBorder="0" 
