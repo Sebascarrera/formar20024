@@ -5,6 +5,9 @@ import Logocolmena from './img/logo-colmena-seguros.png'
 const TransmisionEvento = ({ enabled = false }) => {
 
   const videoId = "lczTdbe_HAQ";
+  const url = window.location.href;
+  const hasWww = url.includes('www');
+  const domain = hasWww ? "www.formar2024.com" : "formar2024.com";
 
   return (
     <div className="contenedor">
@@ -21,7 +24,7 @@ const TransmisionEvento = ({ enabled = false }) => {
           />
           <iframe 
             title="chat"
-            src={`https://www.youtube.com/live_chat?v=${videoId}&embed_domain=www.formar2024.com`}
+            src={`https://www.youtube.com/live_chat?v=${videoId}&embed_domain=${domain}`}
             width="560" 
             height="315" 
             frameBorder="0" 
