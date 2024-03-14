@@ -1,6 +1,7 @@
 import React from 'react';
 import './TransmisionEvento.css'; // Asumiendo que tienes un archivo de estilo llamado TransmisionEvento.css
 import Logocolmena from './img/logo-colmena-seguros.png'
+import WhatsAppButton from './WhatsAppButton';
 
 const TransmisionEvento = ({ enabled = false }) => {
 
@@ -8,6 +9,9 @@ const TransmisionEvento = ({ enabled = false }) => {
   const url = window.location.href;
   const hasWww = url.includes('www');
   const domain = hasWww ? "www.formar2024.com" : "formar2024.com";
+  const phoneNumber = '+573142251941'; // Reemplaza con tu número de WhatsApp
+  const message = '¡Hola! Tengo una pregunta'; // Mensaje predeterminado
+
 
   return (
     <div className="contenedor">
@@ -39,9 +43,14 @@ const TransmisionEvento = ({ enabled = false }) => {
         </div>
         
       )}
-    <div className="logo-container">
+      <div>
+          <p>Si tienes alguna pregunta o incoveniente con la transmisión escríbenos</p>
+          <WhatsAppButton phoneNumber={phoneNumber} message={message} />
+      </div>
+      <div className="logo-container">
         <img src={Logocolmena} alt="logo colmena" />
       </div>
+      
   
     </div>
   

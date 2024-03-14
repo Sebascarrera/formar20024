@@ -69,6 +69,20 @@ body {
     max-width: 100%;
 }
 
+.cont-whatsapp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cont-whatsapp a {
+    color: green;
+    font-size: 50px;
+
+}
+
 @media only screen and (max-width: 600px) {
     /* Estilos para pantallas más pequeñas */
 
