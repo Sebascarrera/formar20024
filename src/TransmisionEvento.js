@@ -18,9 +18,10 @@ const TransmisionEvento = ({ enabled = false }) => {
 
       { enabled ? (
         <>
+          <div className='cont-video-chat'>
           <iframe
             title="video"
-            style={{ width: '60%', height: '60%'}}
+            style={{ width: '100%', height: '100%'}}
             src={`https://www.youtube.com/embed/${videoId}`}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -29,10 +30,11 @@ const TransmisionEvento = ({ enabled = false }) => {
           <iframe 
             title="chat"
             src={`https://www.youtube.com/live_chat?v=${videoId}&embed_domain=${domain}`}
-            width="560" 
-            height="315" 
+            width="100%" 
+            height="30%" 
             frameBorder="0" 
             allowFullscreen/>
+          </div>
         </>
       ): (
         <div className='cont-seccion'>
@@ -43,7 +45,7 @@ const TransmisionEvento = ({ enabled = false }) => {
         </div>
         
       )}
-      <div>
+      <div className='titulo-preguntas-whatsapp'>
           <p>Si tienes alguna pregunta o incoveniente con la transmisión escríbenos</p>
           <WhatsAppButton phoneNumber={phoneNumber} message={message} />
       </div>
