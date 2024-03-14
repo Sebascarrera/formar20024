@@ -19,12 +19,24 @@ body {
 
 .cont-video-chat{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 48%;
-    height: 100%;
+    width: 85%;
+    flex: 1;
 }
+
+.video-frame {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
+.chat-frame {
+    width: 100%;
+    height: 100%;
+    flex: .4;
+}
+
 
 .cont-seccion {
     flex: 1;
@@ -108,36 +120,37 @@ body {
     body {
         background-image: url('/src/img/background-formar2024-max-width600.jpg') !important; /* Cambia la imagen de fondo para pantallas más pequeñas */
         background-size: 100% !important;
-        height: 80% !important;
+        /* height: 80% !important; */
     }
 
     .logo-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 100%;
         padding-bottom: 10px;
-        padding-left: 10%;
-        padding-right: 10%;
+        margin-bottom: 0px;
     }
     
     .logo-container img {
-        max-width: 50%;
+        max-width: 20%;
     }
 
     .cont-video-chat{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 70%;
+    }
+
+    .video-frame {
+        flex: .4;
+    }
+
+    .chat-frame {
+        flex: .7;
     }
 
     .contenedor {
         margin-top: 0px;
+    }
 
+    .cont-whatsapp {
+        margin-bottom: 10px;
     }
   }
   
